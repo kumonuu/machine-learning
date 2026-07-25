@@ -15,7 +15,7 @@ species = ["setosa","versicolor","virginica"]
 le = LabelEncoder()
 y = le.fit_transform(y)
 
-x_train, x_test, y_train, y_test = train_test_split(x,y,train_size=0.7,random_state=1)
+x_train, x_test, y_train, y_test = train_test_split(x,y,train_size=0.7,random_state=42)
 
 dtc = DecisionTreeClassifier()
 dtc.fit(x_train,y_train)
